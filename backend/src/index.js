@@ -6,7 +6,10 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 
-app.use(cors())
+app.use(cors({
+  origin: 'https://frontend.onrender.com',
+  credentials: true                 // if you're using cookies or auth headers
+}));
 app.use(express.json())
 
 app.use('/api/clients', clientRoute)

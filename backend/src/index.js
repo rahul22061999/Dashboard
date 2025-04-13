@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 3000;
 
 
 app.use(cors({
-  origin: 'https://frontend.onrender.com',
-  credentials: true                 // if you're using cookies or auth headers
+  origin: 'https://dashboard-swk8.onrender.com',
+  credentials: true  // if you're using cookies or auth headers
 }));
 app.use(express.json())
 
